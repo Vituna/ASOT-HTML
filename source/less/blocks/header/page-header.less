@@ -1,0 +1,29 @@
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+  min-height: 640px;
+  color: @white;
+  background-image: url("../img/header-photo-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 360px 640px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: 768px;
+    min-height: 980px;
+    background-image: url("../img/header-photo-tablet.png");
+    background-size: 768px 980px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1440px;
+    min-height: 980px;
+    background-image: url("../img/header-photo.jpg");
+    background-size: 1440px 980px;
+  }
+}
+

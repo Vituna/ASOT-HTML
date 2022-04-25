@@ -1,0 +1,120 @@
+// Colors
+@black: #000000;
+@white: #FFFFFF;
+@darkblue: #233878;
+@palegrayblue: #EDEFF4;
+@whitesmok: #F4F4F4;
+@bluebuutom: linear-gradient(210.11deg, #233878 33.2%, #244E8E 59.98%, #2586C5 97.96%);
+@silver: #D2D2D2;
+@gray: #787878;
+
+// Viewports
+@desktop-width: 1440px;
+@tablet-width: 768px;
+@mobile-width: 360px;
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'MontserratBolt';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/montserrat-700.woff2);
+}
+
+@font-face {
+  font-family: 'Montserrat400';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+
+@font-face {
+  font-family: 'Epilogue';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Epilogue-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Epilogue';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Epilogue-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Inter-Regular.ttf);
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  color: @black;
+}
+
+@import url("./blocks/header/page-header.less");
+
+@import url("./blocks/header/nav.less");
+
+@import url("./blocks/header/title.less");
+
+@import url("./blocks/header/logo.less");
+
+@import url("./blocks/main/page-main.less");
+@import url("./blocks/main/services.less");
+
+
+
+// @media (min-width: @tablet-width) {
+//   .main-nav__wrapper {
+//     // display: flex;
+//     // justify-content: space-between;
+//     width: 768px;
+//     margin: 0 auto;
+
+//   }
+// }
+
+
+
+// .header__photo {
+//   position: absolute;
+//   z-index: -1;
+
+// }
