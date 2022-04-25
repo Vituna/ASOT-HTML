@@ -14,54 +14,45 @@
 @mobile-width: 360px;
 
 @font-face {
-  font-family: 'Montserrat';
-  font-weight: 500;
+  font-family: 'Montserrat400';
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/Montserrat-Medium.ttf);
+  src: url(../fonts/montserrat-400.woff2);
 }
 
 @font-face {
-  font-family: 'MontserratBolt';
+  font-family: 'Montserrat500';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/montserrat-500.woff2);
+}
+
+@font-face {
+  font-family: 'Montserrat700';
   font-weight: 700;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/montserrat-700.woff2);
 }
 
+
 @font-face {
-  font-family: 'Montserrat400';
+  font-family: 'inter400';
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/Montserrat-Regular.ttf);
+  src: url(../fonts/inter-400.woff2);
 }
 
-
 @font-face {
-  font-family: 'Epilogue';
+  font-family: 'Inter700';
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/Epilogue-Bold.ttf);
+  src: url(../fonts/inter-700.woff2);
 }
-
-@font-face {
-  font-family: 'Epilogue';
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/Epilogue-SemiBold.ttf);
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/Inter-Regular.ttf);
-}
-
 
 img {
   max-width: 100%;
@@ -80,11 +71,14 @@ img {
   height: 100%;
   font-size: 17px;
   line-height: 22px;
+  margin: auto;
 }
 
 .page__body {
   min-height: 100%;
-  margin: 0;
+  margin: auto;
+
+  // max-width: 100%;
   color: @black;
 }
 
