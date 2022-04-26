@@ -1,5 +1,6 @@
 .services {
-  margin: auto;
+  margin: 0 auto;
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
@@ -42,11 +43,11 @@
 
 }
 
-.services h3 {
-  margin-top: 100px;
-  text-align: center;
-  font-family: 'Epilogue';
-  font-weight: 300;
+.services__title {
+  margin-top: 20%;
+  margin-left: 3%;
+  max-width: 100%;
+  font-family: 'Montserrat300';
   font-size: 24px;
   line-height: 34px;
 }
@@ -58,17 +59,25 @@
     text-align: start;
     font-family: 'Montserrat400';
     font-size: 42px;
-    line-height: 60px;
   }
+}
+
+.services__block {
+  width: 100%;
+  margin: auto;
+}
+
+.services__block div:nth-child(1) {
+  margin: 15% auto 1%;
 }
 
 .services__type {
   display: flex;
   flex-direction: column;
   align-items: end;
-  margin-top: 40px;
-  width: 328px;
-  height: auto;
+  margin: 5% auto 1%;
+  width: 90%;
+  height: 100%;
   border: 1px solid;
   border-color: @silver;
 }
@@ -82,13 +91,11 @@
   }
 }
 
-.services__type h4 {
+.services__name {
   align-self: start;
-  // width: 288px;
-  height: auto;
-  margin-top: 40px;
-  margin-left: 20px;
-  font-family: 'Epilogue';
+  height: 100%;
+  margin: 40px 20px 16px;
+  font-family: 'Montserrat600';
   font-weight: 600;
   font-size: 21px;
   line-height: 34px;
@@ -98,12 +105,12 @@
   width: auto;
   height: auto;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 4%;
 }
 
 .services__item {
   margin-left: 9px;
-  font-family: "Inter";
+  font-family: "inter400";
   font-weight: 400;
   font-size: 17px;
   line-height: 34px;
@@ -114,10 +121,4 @@
   height: 182px;
 }
 
-.services__photo-pribor {
-  position: absolute;
-  margin-top: 30px;
-  width: 139px;
-  height: 139px;
-}
 

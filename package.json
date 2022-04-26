@@ -35,6 +35,6 @@
     "source/less/**/*.less"
   ],
   "engines": {
-    "node": "16.4.2"
+    "node": "12.18.2"
   }
 }
