@@ -1,0 +1,101 @@
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  // right: -100%; /* начальное положение вне экрана */
+  width: auto; /* или любая необходимая ширина */
+  height: auto;
+  background-color: #fff;
+  z-index: 1000;
+  transition: right 0.3s; /* плавное появление и исчезновение */
+  /* Дополнительные стили */
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Дополнительные стили */
+}
+
+.close-icon {
+  cursor: pointer;
+  background-color: black;
+  /* Дополнительные стили */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  
+  /* Дополнительные стили */
+}
+
+.menu li {
+  padding: 15px 20px;
+  text-decoration-color: black;
+
+  /* Дополнительные стили */
+}
+
+.main-nav {
+  
+  display: none;
+  justify-content: right;
+  // align-items: center;
+  // height: 80px;
+  width: 100%;
+  // height: 80px;
+  // max-width: 203px;
+  background-color: blue;
+}
+
+.main-nav__wrapper {
+  display: none;
+  // display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+.menu-icon {
+  min-width: 40px;
+  align-self: center;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    // width: 1440px;
+    height: 90px;
+    margin: 0 auto;
+
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: @white;
+
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1159px;
+  }
+}
+
+
+.main-nav__list a {
+  color: @white;
+}

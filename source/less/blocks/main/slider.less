@@ -1,0 +1,60 @@
+@media (min-width: @mobile-width) { 
+ // Миксин для градиента
+    .white-gradient() {
+        background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    }
+
+    // Переменная для скорости анимации
+    @animationSpeed: 40s;
+
+    // Определение анимации
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-1750px); } // Упрощенное выражение: 250px * 7
+    }
+
+    .slider {
+        background: white;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+        height: 100%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        // Псевдоэлементы для градиентов
+        // &::before,
+        // &::after {
+        // 	.white-gradient(); // Использование миксина
+        // 	content: "";
+        // 	height: 100px;
+        // 	position: absolute;
+        // 	width: 200px;
+        // 	z-index: 2;
+        // }
+
+        // &::after {
+        // 	right: 0;
+        // 	top: 0;
+        // 	transform: rotateZ(180deg);
+        // }
+
+        // &::before {
+        // 	left: 0;
+        // 	top: 0;
+        // }
+
+        // Стилизация дорожки слайдов
+        .slide-track {
+            animation: scroll @animationSpeed linear infinite;
+            display: flex;
+            width: 3500px; // Упрощенное выражение: 250px * 14
+        }
+
+        // Стилизация отдельных слайдов
+        .slide {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
